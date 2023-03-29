@@ -1,7 +1,7 @@
 import 'package:todark/app/modules/home.dart';
 import 'package:todark/app/modules/onboarding_screen.dart';
 import 'package:todark/theme/theme.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide DatePickerTheme;
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

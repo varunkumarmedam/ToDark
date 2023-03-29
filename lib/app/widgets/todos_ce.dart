@@ -6,7 +6,7 @@ import 'package:todark/app/widgets/text_form.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart' as dp;
 import 'package:todark/main.dart';
 
 class TodosCe extends StatefulWidget {
@@ -244,10 +244,10 @@ class _TodosCeState extends State<TodosCe> {
                         },
                       ),
                       onTap: () {
-                        DatePicker.showDateTimePicker(
+                        dp.DatePicker.showDateTimePicker(
                           context,
                           showTitleActions: true,
-                          theme: DatePickerTheme(
+                          theme: dp.DatePickerTheme(
                             backgroundColor:
                                 context.theme.scaffoldBackgroundColor,
                             cancelStyle: const TextStyle(color: Colors.red),
@@ -262,11 +262,11 @@ class _TodosCeState extends State<TodosCe> {
                             service.timeEdit.value.text = date.toString();
                           },
                           currentTime: DateTime.now(),
-                          locale: '${locale?.languageCode}' == 'ru'
-                              ? LocaleType.ru
-                              : '${locale?.languageCode}' == 'zh'
-                                  ? LocaleType.zh
-                                  : LocaleType.en,
+                          // locale: '${locale?.languageCode}' == 'ru'
+                          //     ? LocaleType.ru
+                          //     : '${locale?.languageCode}' == 'zh'
+                          //         ? LocaleType.zh
+                          //         : LocaleType.en,
                         );
                       },
                     ),
