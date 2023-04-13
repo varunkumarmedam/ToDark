@@ -86,9 +86,7 @@ class MyApp extends StatelessWidget {
         return supportedLocales.first;
       },
       debugShowCheckedModeBanner: false,
-      home: settings.onboard == false
-          ? const OnBordingScreen()
-          : const HomePage(),
+      home: const HomePage(),
       builder: EasyLoading.init(),
     );
   }

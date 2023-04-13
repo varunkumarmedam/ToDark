@@ -68,65 +68,65 @@ class _AboutPageState extends State<AboutPage> {
                     color: Color.fromARGB(255, 20, 19, 26),
                   ),
                   child: Image.asset(
-                    'assets/icons/icon_splash.png',
+                    'assets/icons/life_lately.png',
                     scale: 5,
                   ),
                 ),
                 const SizedBox(height: 15),
                 Text(
-                  'ToDark',
+                  'LifeLately',
                   style: context.theme.primaryTextTheme.headlineLarge?.copyWith(
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
                   ),
                 ),
                 Text(
-                  'v$appVersion',
+                  'v1.0.0',
                   style: context.theme.primaryTextTheme.labelLarge?.copyWith(
                     fontWeight: FontWeight.w400,
                     fontSize: 16,
                   ),
                 ),
                 const SizedBox(height: 15),
-                SizedBox(
-                  width: 320,
-                  child: Text(
-                    'aboutDesc'.tr,
-                    style: context.theme.primaryTextTheme.labelLarge?.copyWith(
-                      height: 1.3,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-                MaterialButton(
-                  highlightColor: Colors.transparent,
-                  onPressed: () async {
-                    final Uri url =
-                        Uri.parse('https://github.com/DarkMooNight/ToDark');
+                // SizedBox(
+                //   width: 320,
+                //   child: Text(
+                //     'aboutDesc'.tr,
+                //     style: context.theme.primaryTextTheme.labelLarge?.copyWith(
+                //       height: 1.3,
+                //       fontWeight: FontWeight.w400,
+                //       color: Colors.white,
+                //       fontSize: 16,
+                //     ),
+                //     textAlign: TextAlign.center,
+                //   ),
+                // ),
+                // MaterialButton(
+                //   highlightColor: Colors.transparent,
+                //   onPressed: () async {
+                //     final Uri url =
+                //         Uri.parse('https://github.com/varunkumarmedam/todark');
 
-                    if (!await launchUrl(url,
-                        mode: LaunchMode.externalApplication)) {
-                      throw Exception('Could not launch $url');
-                    }
-                  },
-                  child: Text(
-                    'GitHub',
-                    style: context.theme.primaryTextTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.w600,
-                      color: Colors.cyan,
-                      fontSize: 28,
-                    ),
-                  ),
-                ),
+                //     if (!await launchUrl(url,
+                //         mode: LaunchMode.externalApplication)) {
+                //       throw Exception('Could not launch $url');
+                //     }
+                //   },
+                //   child: Text(
+                //     'GitHub',
+                //     style: context.theme.primaryTextTheme.titleLarge?.copyWith(
+                //       fontWeight: FontWeight.w600,
+                //       color: Colors.cyan,
+                //       fontSize: 28,
+                //     ),
+                //   ),
+                // ),
               ],
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(5, 30, 5, 20),
               child: Text(
-                '${'author'.tr} DARK NIGHT',
+                '${'author'.tr} Sravani Sparkzz',
                 style: context.theme.primaryTextTheme.labelLarge?.copyWith(
                   fontWeight: FontWeight.w400,
                   color: Colors.white,

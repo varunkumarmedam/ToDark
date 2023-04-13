@@ -8,7 +8,7 @@ class NotificationShow {
       int id, String title, String body, DateTime? date) async {
     AndroidNotificationDetails androidNotificationDetails =
         const AndroidNotificationDetails(
-      'ToDark',
+      'LifeLately',
       'DARK NIGHT',
       priority: Priority.max,
       importance: Importance.max,
